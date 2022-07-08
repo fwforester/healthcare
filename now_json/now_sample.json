@@ -1,21 +1,21 @@
 {
-  "_id": "pcr_53640230",
-  "_rev": "8-d1dc327af5c045edffe9f27ef385bcbe",
-  "callNature": "",
+  "_id": "pcr_55424212",
+  "_rev": "1650-09cfea8805cd75e3b721ae22f9e40010",
+  "time": "",
   "date": "",
-  "patientName": "",
   "pickupLocation": "",
+  "callNature": "",
+  "patientName": "",
+  "unit": "",
   "run": "",
   "status": "Incomplete",
-  "time": "",
-  "unit": "",
-  "key": "pcr_53640230",
-  "upgradeStatus": "COMPLETE",
   "serviceId": "1329",
-  "createdBy": "160644",
-  "prid": "53640230",
-  "createDateTime": "2022-07-05T21:43:52.240Z",
-  "version": "0.1",
+  "createdBy": "160639",
+  "prid": "55424212",
+  "createDateTime": "2022-04-21T19:36:28.909Z",
+  "cadImport": {
+    "id": 340524
+  },
   "patient": {
     "tripInformation": {
       "base": {
@@ -23,58 +23,57 @@
         "name": "Station 1"
       },
       "unit": {
-        "id": 13958,
-        "name": "Medic 1"
+        "id": 14129,
+        "name": "Rotor 1"
       },
-      "staffingLevel": null,
-      "shift": null,
+      "staffingLevel": {
+        "id": 2,
+        "name": "BLS"
+      },
+      "shift": {
+        "id": 1735,
+        "name": "Shift 1"
+      },
       "registrationTailNumber": null,
       "dispatchPriority": {
         "id": 4665,
         "name": "Emergency"
       },
-      "typeofService": null,
-      "scheduled": null,
+      "typeofService": {
+        "id": 107,
+        "name": "Crew Transport Only"
+      },
+      "scheduled": {
+        "id": 0,
+        "name": "Unscheduled"
+      },
       "patientCategory": {
-        "id": 2809,
-        "name": "Abdominal Pain"
+        "id": 2813,
+        "name": "Back Pain"
       },
-      "dispatchedAs": null,
-      "disposition": null,
-      "ambulanceTransportCode": null,
-      "massCasualty": null,
-      "dispatchLocation": "",
-      "vehicleGPSN": "",
-      "vehicleGPSE": "",
-      "vehicleGrid": null
-    },
-    "patientDemographics": {
-      "address1": "1234 Main Street",
-      "age": "30",
-      "ageUnit": {
-        "id": "m",
-        "name": "Months"
+      "dispatchedAs": {
+        "id": 2834,
+        "name": "Sick Person"
       },
-      "city": "San Diego",
-      "dOB": "12/31/1980",
-      "lastName": "Last",
-      "sSN": "123-65-4789",
-      "state": {
-        "id": "CA",
-        "name": "California"
+      "disposition": {
+        "id": 8437,
+        "name": "WCV Transport"
       },
-      "zipCode": "92001"
-    },
-    "pickupAddress": {
-      "address": "11802 RIDGE PKWY 400",
-      "city": "BROOMFIELD",
-      "referringGPSN": 0,
-      "referringGPSE": 0,
-      "state": {
-        "id": "CO",
-        "name": "Colorado"
+      "ambulanceTransportCode": {
+        "id": 3,
+        "name": "Round Trip"
       },
-      "zip": "80021"
+      "massCasualty": {
+        "id": 1,
+        "name": "Yes"
+      },
+      "dispatchLocation": "dispatch location",
+      "vehicleGPSN": "45",
+      "vehicleGPSE": "45",
+      "vehicleGrid": {
+        "id": 9664,
+        "name": "Z2"
+      }
     },
     "timelineItems": [
       {
@@ -82,22 +81,669 @@
         "grid": true,
         "rowActionType": "timeline/SET_TIMES_ITEM",
         "defaultHref": "/tabs/times",
-        "date": "2022-04-05T18:29:00.000Z",
-        "key": "times/ADD_RECEIVED_CURRENT_DATETIME",
-        "labelHeader": "11:29",
-        "subHeader": "04/05/22",
-        "event": "Received"
+        "date": "2022-04-26T22:04:00.000Z",
+        "key": "times/ADD_DISPATCHED_CURRENT_DATETIME",
+        "labelHeader": "15:04",
+        "subHeader": "04/26/22",
+        "event": "Dispatched"
       },
       {
-        "itemType": "Times",
+        "key": "73001986",
         "grid": true,
-        "rowActionType": "timeline/SET_TIMES_ITEM",
-        "defaultHref": "/tabs/times",
-        "date": "2022-07-06T00:43:00.000Z",
-        "key": "times/ADD_DISPATCHED_CURRENT_DATETIME",
-        "labelHeader": "17:43",
-        "subHeader": "07/05/22",
-        "event": "Dispatched"
+        "labelHeader": "14:53",
+        "subHeader": "05/10/22",
+        "itemType": "Procedures",
+        "event": "Intubation",
+        "eventSubHeader": "By Steve Frye, Size:2, Depth:3, Attempts:1, Success: Yes, Comments: intubation comment #1.",
+        "rowActionType": "timeline/SET_INTUBATION_PROCEDURE_ITEM",
+        "defaultHref": "/tabs/intubationProcedure",
+        "date": "2022-05-10T21:53:00.000Z"
+      },
+      {
+        "key": "25367008",
+        "itemType": "Medications",
+        "event": "Medication Administered",
+        "grid": true,
+        "labelHeader": "14:10",
+        "subHeader": "05/11/22",
+        "eventSubHeader": "1/3 Normal Saline With 1:1 Heparin By Sravani Bandi, 1 MCG/MIN, Via Endotracheal Tube, 6% Dextran By Sravani Bandi, 4 GMS, Via Gastronomy Tube, Comments: medication #1  comment",
+        "rowActionType": "timeline/SET_ADD_MEDICATION_ADMINISTERED_ITEM",
+        "defaultHref": "/tabs/medicationsAdministered",
+        "date": "2022-05-11T21:10:00.000Z"
+      },
+      {
+        "key": "20894373",
+        "itemType": "Medications",
+        "event": "Medication Administered",
+        "grid": true,
+        "labelHeader": "14:12",
+        "subHeader": "05/11/22",
+        "eventSubHeader": "fake name By Ruthra duraisamy, 7 Inches, Via Inhalation, Comments: medication #2 comment",
+        "rowActionType": "timeline/SET_ADD_MEDICATION_ADMINISTERED_ITEM",
+        "defaultHref": "/tabs/medicationsAdministered",
+        "date": "2022-05-11T21:12:00.000Z"
+      }
+    ],
+    "pickupAddress": {
+      "typeValue": {
+        "id": 2,
+        "name": "EMS"
+      },
+      "typeOptions": [],
+      "otherType": null,
+      "location": "pickup location",
+      "county": "pickup county",
+      "mCD": "",
+      "requester": "",
+      "referringMD": "",
+      "referringRN": "",
+      "referringUSNG": "",
+      "referringGPSN": "",
+      "referringGPSE": "",
+      "responseMode": {
+        "id": 1,
+        "name": "No Lights/Sirens"
+      },
+      "address": "pickup address 1",
+      "aptSuiteRoom": "pickup apt 1",
+      "milePostMajorRoadway": "pickup mile post",
+      "crossStreetDirections": "pickup cross street",
+      "city": "pickup city",
+      "state": {
+        "id": "ID",
+        "name": "Idaho"
+      },
+      "zip": "12345",
+      "country": {
+        "id": 1,
+        "name": "United States"
+      },
+      "censusTract": ""
+    },
+    "patientDemographics": {
+      "firstName": "FIRST",
+      "middleInitial": "M",
+      "lastName": "LAST",
+      "suffix": {
+        "id": "Jr",
+        "name": "Jr"
+      },
+      "dOB": "02/15/1990",
+      "age": "32",
+      "ageUnit": {
+        "id": "y",
+        "name": "Years"
+      },
+      "sSN": "123-45-6789",
+      "weight": "111",
+      "weightUnits": {
+        "id": "l",
+        "name": "lb"
+      },
+      "height": "72",
+      "heightUnits": {
+        "id": "cm",
+        "name": "cm"
+      },
+      "gender": {
+        "id": "MtF",
+        "name": "Male-to-Female, Transgender Female"
+      },
+      "bloodType": {
+        "id": 2,
+        "name": "O+"
+      },
+      "race": [
+        {
+          "id": 6,
+          "name": "Asian"
+        },
+        {
+          "id": 11,
+          "name": "Black or African American"
+        }
+      ],
+      "driversLicense": "",
+      "dlState": null,
+      "runID": "runid",
+      "patientID": "patientid",
+      "address1": "patient address1",
+      "address2": "patient address2",
+      "zipCode": "09876",
+      "city": "patient city",
+      "state": null,
+      "county": "",
+      "country": {
+        "id": 12,
+        "name": "Aruba"
+      },
+      "number": "123-456-7890",
+      "phoneType": {
+        "id": 2,
+        "name": "Work",
+        "nemsis3": 9913009
+      },
+      "email": "patient@email.com",
+      "emailType": {
+        "id": 2,
+        "name": "Work"
+      },
+      "phoneDetail": {
+        "key": "34979116",
+        "number": "123-456-7890",
+        "type": {
+          "id": 2,
+          "name": "Work",
+          "nemsis3": 9913009
+        }
+      },
+      "phoneDetails": [
+        {
+          "key": "34979116",
+          "number": "123-456-7890",
+          "type": {
+            "id": 2,
+            "name": "Work",
+            "nemsis3": 9913009
+          }
+        }
+      ],
+      "emailDetails": [
+        {
+          "key": "64098362",
+          "address": "patient@email.com",
+          "type": {
+            "id": 2,
+            "name": "Work"
+          }
+        }
+      ],
+      "emailDetail": {
+        "key": "64098362",
+        "address": "patient@email.com",
+        "type": {
+          "id": 2,
+          "name": "Work"
+        }
+      }
+    },
+    "patientVitals": [],
+    "narrative": {
+      "narrativeText": "test narrative"
+    },
+    "intubationStateList": [
+      {
+        "key": "73001986",
+        "date": "05/10/22",
+        "time": "14:53",
+        "assessedBy": {
+          "id": 160746,
+          "name": "Steve Frye"
+        },
+        "successfulAttempt": true,
+        "attempts": "1",
+        "size": "2",
+        "distance": "3",
+        "distanceUnit": {
+          "name": "cm from Lips",
+          "id": "LIPS"
+        },
+        "method": {
+          "name": "LMA",
+          "id": "LMA"
+        },
+        "securedVia": {
+          "id": 1,
+          "name": "Commercial Device"
+        },
+        "verifiedBy": {
+          "name": "Another Person on the Same Crew",
+          "id": 1
+        },
+        "verificationVia": [
+          {
+            "name": "Auscultation",
+            "id": 2
+          },
+          {
+            "name": "Capnography (Waveform)",
+            "id": 4
+          }
+        ],
+        "rSIProtocol": {
+          "id": 1,
+          "name": "Yes"
+        },
+        "mallampati": {
+          "id": 1,
+          "seq": 1,
+          "name": "Class I"
+        },
+        "sellickManeuver": {
+          "id": 0,
+          "name": "No"
+        },
+        "laryngoscopicGrade": {
+          "name": "Grade I",
+          "id": 1
+        },
+        "styletUsed": null,
+        "cuffFill": null,
+        "cuffFillQty": "4",
+        "laryngoscopeBlade": null,
+        "indications": [
+          {
+            "name": "Adequate Airway Reflexes/Effort, Potential for compromise",
+            "id": 1
+          },
+          {
+            "name": "Airway Reflex Compromised",
+            "id": 2
+          },
+          {
+            "name": "Apnea or Agonal Respirations",
+            "id": 3
+          }
+        ],
+        "decisiontoManageTime": "14:54",
+        "decisiontoManageDate": "05/10/22",
+        "decisiontoManageDateTime": "",
+        "abandonedTime": "15:30",
+        "abandonedDate": "05/11/22",
+        "abandonedDateTime": "",
+        "airwayComplications": [
+          {
+            "id": 13,
+            "name": "None"
+          },
+          {
+            "id": 1,
+            "name": "Adverse Event from Facilitating Drugs"
+          },
+          {
+            "id": 9,
+            "name": "Oxygen Desaturation (<90%)"
+          }
+        ],
+        "procedureComplications": [
+          {
+            "name": "Altered Mental Status",
+            "id": 4505
+          },
+          {
+            "name": "Apnea",
+            "id": 4510
+          },
+          {
+            "name": "Bleeding",
+            "id": 4515
+          },
+          {
+            "name": "Bradycardia",
+            "id": 7
+          }
+        ],
+        "response": {
+          "name": "Improved",
+          "id": 1
+        },
+        "authorization": {
+          "id": 4495,
+          "nemsis3": 9918007,
+          "medAuth": 4495,
+          "procAuth": 4630,
+          "name": "Written Orders (Patient Specific)"
+        },
+        "comments": "intubation comment #1",
+        "addToTimeline": true,
+        "updateInputRows": false,
+        "type": "Intubation"
+      }
+    ],
+    "cardiacStateList": [],
+    "childbirthOBStateList": [],
+    "initiateIvStateList": [],
+    "medicalConsultStateList": [],
+    "operationsStateList": [],
+    "rescueStateList": [],
+    "ventilatorStateList": [],
+    "hospitalNotifyStateList": [],
+    "medicationAdministeredStateList": [
+      {
+        "key": "25367008",
+        "date": "05/11/22",
+        "time": "14:10",
+        "dateTime": "",
+        "performedBy": {
+          "id": 160641,
+          "name": "Sravani Bandi"
+        },
+        "name": {
+          "name": "6% Dextran"
+        },
+        "dose": "4",
+        "doseUnit": {
+          "id": 2785,
+          "name": "GMS"
+        },
+        "rate": "5",
+        "rateUnit": {
+          "id": 2851,
+          "name": "ML/MIN"
+        },
+        "frequency": {
+          "textOrder": null,
+          "name": "q2h (every 2 hours)",
+          "id": 2
+        },
+        "route": {
+          "id": 2870,
+          "name": "Gastronomy Tube"
+        },
+        "concentration": "6",
+        "response": {
+          "name": "Improved",
+          "id": 1
+        },
+        "complications": [
+          {
+            "name": "Altered Mental Status",
+            "id": 4395
+          },
+          {
+            "name": "Apnea",
+            "id": 4400
+          }
+        ],
+        "authorization": {
+          "id": 4480,
+          "nemsis3": 9918001,
+          "medAuth": 4480,
+          "procAuth": 4615,
+          "name": "On-Line (Radio or Telephone)"
+        },
+        "wasted": true,
+        "lotNumber": "lot#1-1",
+        "witness1": "witness1",
+        "witness2": "witness2",
+        "medicationAdministered": {
+          "key": "12550334",
+          "name": {
+            "name": "1/3 Normal Saline With 1:1 Heparin"
+          },
+          "dose": "1",
+          "doseUnit": {
+            "id": 2826,
+            "name": "MCG/MIN"
+          },
+          "rate": "2",
+          "rateUnit": {
+            "id": 2815,
+            "name": "LPM"
+          },
+          "frequency": {
+            "textOrder": null,
+            "name": "qi (every hour)",
+            "id": 1
+          },
+          "route": {
+            "id": 2865,
+            "name": "Endotracheal Tube"
+          },
+          "concentration": "3",
+          "response": {
+            "name": "Improved",
+            "id": 1
+          },
+          "complications": [
+            {
+              "name": "Altered Mental Status",
+              "id": 4395
+            },
+            {
+              "name": "Apnea",
+              "id": 4400
+            }
+          ],
+          "wasted": false,
+          "lotNumber": "lot#1-1",
+          "witness1": "",
+          "witness2": ""
+        },
+        "comments": "medication #1  comment",
+        "addMedicationAdministeredData": [
+          {
+            "key": "12550334",
+            "name": {
+              "name": "1/3 Normal Saline With 1:1 Heparin"
+            },
+            "dose": "1",
+            "doseUnit": {
+              "id": 2826,
+              "name": "MCG/MIN"
+            },
+            "rate": "2",
+            "rateUnit": {
+              "id": 2815,
+              "name": "LPM"
+            },
+            "frequency": {
+              "textOrder": null,
+              "name": "qi (every hour)",
+              "id": 1
+            },
+            "route": {
+              "id": 2865,
+              "name": "Endotracheal Tube"
+            },
+            "concentration": "3",
+            "response": {
+              "name": "Improved",
+              "id": 1
+            },
+            "complications": [
+              {
+                "name": "Altered Mental Status",
+                "id": 4395
+              },
+              {
+                "name": "Apnea",
+                "id": 4400
+              }
+            ],
+            "wasted": false,
+            "lotNumber": "lot#1-1",
+            "witness1": "",
+            "witness2": ""
+          },
+          {
+            "key": "76180091",
+            "name": {
+              "name": "6% Dextran"
+            },
+            "dose": "4",
+            "doseUnit": {
+              "id": 2785,
+              "name": "GMS"
+            },
+            "rate": "5",
+            "rateUnit": {
+              "id": 2851,
+              "name": "ML/MIN"
+            },
+            "frequency": {
+              "textOrder": null,
+              "name": "q2h (every 2 hours)",
+              "id": 2
+            },
+            "route": {
+              "id": 2870,
+              "name": "Gastronomy Tube"
+            },
+            "concentration": "6",
+            "response": null,
+            "complications": [],
+            "wasted": true,
+            "lotNumber": "lot#1-2",
+            "witness1": "witness1",
+            "witness2": "witness2"
+          }
+        ],
+        "areMedicationsOptionsLoading": false,
+        "addToTimeline": true,
+        "type": "Medication"
+      },
+      {
+        "key": "20894373",
+        "date": "05/11/22",
+        "time": "14:12",
+        "dateTime": "",
+        "performedBy": {
+          "id": 160642,
+          "name": "Ruthra duraisamy"
+        },
+        "name": {
+          "name": "fake name"
+        },
+        "dose": "7",
+        "doseUnit": {
+          "id": 2790,
+          "name": "Inches"
+        },
+        "rate": "8",
+        "rateUnit": {
+          "id": 11,
+          "name": "UNITS/MIN"
+        },
+        "frequency": {
+          "textOrder": null,
+          "name": "q3h (every 3 hours)",
+          "id": 3
+        },
+        "route": {
+          "id": 2875,
+          "name": "Inhalation"
+        },
+        "concentration": "9",
+        "response": {
+          "name": "Unchanged",
+          "id": 2
+        },
+        "complications": [
+          {
+            "name": "Urticaria",
+            "id": 4
+          },
+          {
+            "name": "Tachypnea",
+            "id": 3
+          }
+        ],
+        "authorization": {
+          "id": 4485,
+          "nemsis3": 9918003,
+          "medAuth": 4485,
+          "procAuth": 4620,
+          "name": "On-Scene"
+        },
+        "wasted": false,
+        "lotNumber": "lot#2-1",
+        "witness1": "",
+        "witness2": "",
+        "medicationAdministered": {
+          "key": "67937562",
+          "name": {
+            "name": "fake name"
+          },
+          "dose": "7",
+          "doseUnit": {
+            "id": 2790,
+            "name": "Inches"
+          },
+          "rate": "8",
+          "rateUnit": {
+            "id": 11,
+            "name": "UNITS/MIN"
+          },
+          "frequency": {
+            "textOrder": null,
+            "name": "q3h (every 3 hours)",
+            "id": 3
+          },
+          "route": {
+            "id": 2875,
+            "name": "Inhalation"
+          },
+          "concentration": "9",
+          "response": {
+            "name": "Unchanged",
+            "id": 2
+          },
+          "complications": [
+            {
+              "name": "Urticaria",
+              "id": 4
+            },
+            {
+              "name": "Tachypnea",
+              "id": 3
+            }
+          ],
+          "wasted": false,
+          "lotNumber": "lot#2-1",
+          "witness1": "",
+          "witness2": ""
+        },
+        "comments": "medication #2 comment",
+        "addMedicationAdministeredData": [
+          {
+            "key": "67937562",
+            "name": {
+              "name": "fake name"
+            },
+            "dose": "7",
+            "doseUnit": {
+              "id": 2790,
+              "name": "Inches"
+            },
+            "rate": "8",
+            "rateUnit": {
+              "id": 11,
+              "name": "UNITS/MIN"
+            },
+            "frequency": {
+              "textOrder": null,
+              "name": "q3h (every 3 hours)",
+              "id": 3
+            },
+            "route": {
+              "id": 2875,
+              "name": "Inhalation"
+            },
+            "concentration": "9",
+            "response": {
+              "name": "Unchanged",
+              "id": 2
+            },
+            "complications": [
+              {
+                "name": "Urticaria",
+                "id": 4
+              },
+              {
+                "name": "Tachypnea",
+                "id": 3
+              }
+            ],
+            "wasted": false,
+            "lotNumber": "lot#2-1",
+            "witness1": "",
+            "witness2": ""
+          }
+        ],
+        "areMedicationsOptionsLoading": false,
+        "addToTimeline": true,
+        "type": "Medication"
       }
     ]
   },
@@ -121,17 +767,17 @@
     "inQuartersFlag": true,
     "cancelledFlag": true,
     "onsetTime": "",
-    "receivedTime": "11:29",
+    "receivedTime": "",
     "dispatchNotifiedTime": "",
     "standbyTime": "",
-    "dispatchedTime": "17:43",
+    "dispatchedTime": "15:04",
     "acknowledgedTime": "",
     "enRouteTime": "",
     "onsetDate": "",
-    "receivedDate": "04/05/22",
+    "receivedDate": "",
     "dispatchNotifiedDate": "",
     "standbyDate": "",
-    "dispatchedDate": "07/05/22",
+    "dispatchedDate": "04/26/22",
     "acknowledgedDate": "",
     "enRouteDate": "",
     "stagingTime": "",
@@ -140,7 +786,7 @@
     "transferCareEMSTime": "",
     "leaveReferringTime": "",
     "arriveReceivingTime": "",
-    "transferCareDestinationTime": "",
+    "transferCareDestinationTime": "15:13",
     "availableTime": "",
     "callCompletedTime": "",
     "inQuartersTime": "",
@@ -151,357 +797,28 @@
     "transferCareEMSDate": "",
     "leaveReferringDate": "",
     "arriveReceivingDate": "",
-    "transferCareDestinationDate": "",
+    "transferCareDestinationDate": "04/26/22",
     "availableDate": "",
     "callCompletedDate": "",
     "inQuartersDate": "",
     "cancelledDate": ""
   },
-  "dispatchId": "EMC-NOW-TEST-3162512671",
-  "cadImport": {
-    "isLoading": false,
-    "success": true,
-    "failure": false,
-    "importedCadRecordId": null,
-    "importedCadData": [
-      {
-        "id": "BASE",
-        "displayLabel": "Base",
-        "appStateLocation": "patient.tripInformation.base",
-        "isPickList": true,
-        "value": {
-          "id": 4933,
-          "name": "Station 1"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "DISPATCH_RECORD_ID",
-        "displayLabel": "Dispatch Record ID",
-        "appStateLocation": "dispatchId",
-        "isPickList": false,
-        "value": "EMC-NOW-TEST-3162512671",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "DISP_CENTER",
-        "displayLabel": "Dispatch Center",
-        "appStateLocation": "cadImport.dispCenter",
-        "isPickList": false,
-        "value": 550,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "DT_DISPATCH_DATE",
-        "displayLabel": "Date Dispatched",
-        "appStateLocation": "times.dispatchedDate",
-        "isPickList": false,
-        "value": "07/05/22",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "DT_DISPATCH_TIME",
-        "displayLabel": "Time Dispatched",
-        "appStateLocation": "times.dispatchedTime",
-        "isPickList": false,
-        "value": "17:43",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "DT_RECEIVED_DATE",
-        "displayLabel": "Date Arrive Receiving",
-        "appStateLocation": "times.receivedDate",
-        "isPickList": false,
-        "value": "04/05/22",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "DT_RECEIVED_TIME",
-        "displayLabel": "Time Arrive Receiving",
-        "appStateLocation": "times.receivedTime",
-        "isPickList": false,
-        "value": "11:29",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "ID",
-        "displayLabel": "CAD ID",
-        "appStateLocation": "dispatch.cadRecordId",
-        "isPickList": false,
-        "value": 340607,
-        "performImport": true,
-        "isAllowedToToggleImport": false
-      },
-      {
-        "id": "LPM",
-        "displayLabel": "Loaded Miles",
-        "appStateLocation": "dispatch.loadedMiles",
-        "isPickList": false,
-        "value": 0,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "MEDICAL_CATEGORY",
-        "displayLabel": "Medical Category",
-        "appStateLocation": "patient.tripInformation.patientCategory",
-        "isPickList": true,
-        "value": {
-          "id": 2809,
-          "name": "Abdominal Pain"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_ADDR",
-        "displayLabel": "Patient Address",
-        "appStateLocation": "patient.patientDemographics.address1",
-        "isPickList": false,
-        "value": "1234 Main Street",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_AGE",
-        "displayLabel": "Patient Age",
-        "appStateLocation": "patient.patientDemographics.age",
-        "isPickList": false,
-        "value": "30",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_AGE_TYPE",
-        "displayLabel": "Patient Age Unit",
-        "appStateLocation": "patient.patientDemographics.ageUnit",
-        "isPickList": true,
-        "value": {
-          "id": "m",
-          "name": "Months"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_CITY",
-        "displayLabel": "Patient Adress City",
-        "appStateLocation": "patient.patientDemographics.city",
-        "isPickList": false,
-        "value": "San Diego",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_DOB",
-        "displayLabel": "Patient DOB",
-        "appStateLocation": "patient.patientDemographics.dOB",
-        "isPickList": false,
-        "value": "12/31/1980",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_LNAME",
-        "displayLabel": "Patient Last Name",
-        "appStateLocation": "patient.patientDemographics.lastName",
-        "isPickList": false,
-        "value": "Last",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_SSN",
-        "displayLabel": "Patient SSN",
-        "appStateLocation": "patient.patientDemographics.sSN",
-        "isPickList": false,
-        "value": "123-65-4789",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_STATE",
-        "displayLabel": "Patient State",
-        "appStateLocation": "patient.patientDemographics.state",
-        "isPickList": true,
-        "value": {
-          "id": "CA",
-          "name": "California"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "PT_ZIP",
-        "displayLabel": "Patient Zip Code",
-        "appStateLocation": "patient.patientDemographics.zipCode",
-        "isPickList": false,
-        "value": "92001",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REC_ADDR",
-        "displayLabel": "Destination Address",
-        "appStateLocation": "disposition.destination.address",
-        "isPickList": false,
-        "value": "1000 PARK AVE",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REC_LAT",
-        "displayLabel": "Destination Lattitude",
-        "appStateLocation": "disposition.destination.GPSN",
-        "isPickList": false,
-        "value": 0,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REC_LON",
-        "displayLabel": "Destination Longitude",
-        "appStateLocation": "disposition.destination.GPSE",
-        "isPickList": false,
-        "value": 0,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REC_STATE",
-        "displayLabel": "Destination State",
-        "appStateLocation": "disposition.destination.state",
-        "isPickList": true,
-        "value": {
-          "id": "PA",
-          "name": "Pennsylvania"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REC_TYPE",
-        "displayLabel": "Destination Type",
-        "appStateLocation": "disposition.destination.type",
-        "isPickList": false,
-        "value": 2,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REF_ADDR",
-        "displayLabel": "Pickup Address",
-        "appStateLocation": "patient.pickupAddress.address",
-        "isPickList": false,
-        "value": "11802 RIDGE PKWY 400",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REF_CITY",
-        "displayLabel": "Pickup City",
-        "appStateLocation": "patient.pickupAddress.city",
-        "isPickList": false,
-        "value": "BROOMFIELD",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REF_LAT",
-        "displayLabel": "Pickup Latitude",
-        "appStateLocation": "patient.pickupAddress.referringGPSN",
-        "isPickList": false,
-        "value": 0,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REF_LON",
-        "displayLabel": "Pickup Longitude",
-        "appStateLocation": "patient.pickupAddress.referringGPSE",
-        "isPickList": false,
-        "value": 0,
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REF_STATE",
-        "displayLabel": "Pickup State",
-        "appStateLocation": "patient.pickupAddress.state",
-        "isPickList": true,
-        "value": {
-          "id": "CO",
-          "name": "Colorado"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "REF_ZIP",
-        "displayLabel": "Pickup Zip Code",
-        "appStateLocation": "patient.pickupAddress.zip",
-        "isPickList": false,
-        "value": "80021",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "RESPONSE_CODE",
-        "displayLabel": "Dispatch Priority",
-        "appStateLocation": "patient.tripInformation.dispatchPriority",
-        "isPickList": true,
-        "value": {
-          "id": 4665,
-          "name": "Emergency"
-        },
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      },
-      {
-        "id": "TS_MODIFIED",
-        "displayLabel": "CAD Last Modified",
-        "appStateLocation": "cadImport.lastModified",
-        "isPickList": false,
-        "value": "2022-07-05T17:43:53.896342",
-        "performImport": true,
-        "isAllowedToToggleImport": true
-      }
-    ],
-    "importResponse": {
-      "ok": true,
-      "id": "pcr_53640230",
-      "rev": "4-c2f05ed4c308ff7a4768be4e6a0814f9"
-    },
-    "importSuccess": true
-  },
-  "dispatch": {
-    "cadRecordId": 340607,
-    "loadedMiles": 0
-  },
-  "disposition": {
-    "destination": {
-      "address": "1000 PARK AVE",
-      "GPSN": 0,
-      "GPSE": 0,
-      "state": {
-        "id": "PA",
-        "name": "Pennsylvania"
-      },
-      "type": 2
-    }
-  },
   "submitChart": {
-    "prid": "3838899",
-    "emcUrl": "https://zoll-alpha.emscharts.com/pr/summary_full.cfm?prid=3838899",
+    "prid": "3819524",
+    "emcUrl": "https://zoll-alpha.emscharts.com/pr/summary_full.cfm?prid=3819524",
     "inProgress": false,
     "success": true,
     "failure": false
-  }
+  },
+  "crew": [
+    {
+      "key": "22016837",
+      "userId": {
+        "id": 160639,
+        "name": "Scott Klein"
+      },
+      "certificationLevelId": "",
+      "roleId": []
+    }
+  ]
 }
