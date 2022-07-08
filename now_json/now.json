@@ -1,0 +1,507 @@
+{
+  "_id": "pcr_53640230",
+  "_rev": "8-d1dc327af5c045edffe9f27ef385bcbe",
+  "callNature": "",
+  "date": "",
+  "patientName": "",
+  "pickupLocation": "",
+  "run": "",
+  "status": "Incomplete",
+  "time": "",
+  "unit": "",
+  "key": "pcr_53640230",
+  "upgradeStatus": "COMPLETE",
+  "serviceId": "1329",
+  "createdBy": "160644",
+  "prid": "53640230",
+  "createDateTime": "2022-07-05T21:43:52.240Z",
+  "version": "0.1",
+  "patient": {
+    "tripInformation": {
+      "base": {
+        "id": 4933,
+        "name": "Station 1"
+      },
+      "unit": {
+        "id": 13958,
+        "name": "Medic 1"
+      },
+      "staffingLevel": null,
+      "shift": null,
+      "registrationTailNumber": null,
+      "dispatchPriority": {
+        "id": 4665,
+        "name": "Emergency"
+      },
+      "typeofService": null,
+      "scheduled": null,
+      "patientCategory": {
+        "id": 2809,
+        "name": "Abdominal Pain"
+      },
+      "dispatchedAs": null,
+      "disposition": null,
+      "ambulanceTransportCode": null,
+      "massCasualty": null,
+      "dispatchLocation": "",
+      "vehicleGPSN": "",
+      "vehicleGPSE": "",
+      "vehicleGrid": null
+    },
+    "patientDemographics": {
+      "address1": "1234 Main Street",
+      "age": "30",
+      "ageUnit": {
+        "id": "m",
+        "name": "Months"
+      },
+      "city": "San Diego",
+      "dOB": "12/31/1980",
+      "lastName": "Last",
+      "sSN": "123-65-4789",
+      "state": {
+        "id": "CA",
+        "name": "California"
+      },
+      "zipCode": "92001"
+    },
+    "pickupAddress": {
+      "address": "11802 RIDGE PKWY 400",
+      "city": "BROOMFIELD",
+      "referringGPSN": 0,
+      "referringGPSE": 0,
+      "state": {
+        "id": "CO",
+        "name": "Colorado"
+      },
+      "zip": "80021"
+    },
+    "timelineItems": [
+      {
+        "itemType": "Times",
+        "grid": true,
+        "rowActionType": "timeline/SET_TIMES_ITEM",
+        "defaultHref": "/tabs/times",
+        "date": "2022-04-05T18:29:00.000Z",
+        "key": "times/ADD_RECEIVED_CURRENT_DATETIME",
+        "labelHeader": "11:29",
+        "subHeader": "04/05/22",
+        "event": "Received"
+      },
+      {
+        "itemType": "Times",
+        "grid": true,
+        "rowActionType": "timeline/SET_TIMES_ITEM",
+        "defaultHref": "/tabs/times",
+        "date": "2022-07-06T00:43:00.000Z",
+        "key": "times/ADD_DISPATCHED_CURRENT_DATETIME",
+        "labelHeader": "17:43",
+        "subHeader": "07/05/22",
+        "event": "Dispatched"
+      }
+    ]
+  },
+  "times": {
+    "onsetFlag": true,
+    "receivedFlag": true,
+    "dispatchNotifiedFlag": true,
+    "standbyFlag": false,
+    "dispatchedFlag": true,
+    "acknowledgedFlag": true,
+    "enRouteFlag": true,
+    "stagingFlag": true,
+    "onSceneFlag": true,
+    "atPatientFlag": true,
+    "transferCareEMSFlag": true,
+    "leaveReferringFlag": true,
+    "arriveReceivingFlag": true,
+    "transferCareDestinationFlag": true,
+    "availableFlag": true,
+    "callCompletedFlag": true,
+    "inQuartersFlag": true,
+    "cancelledFlag": true,
+    "onsetTime": "",
+    "receivedTime": "11:29",
+    "dispatchNotifiedTime": "",
+    "standbyTime": "",
+    "dispatchedTime": "17:43",
+    "acknowledgedTime": "",
+    "enRouteTime": "",
+    "onsetDate": "",
+    "receivedDate": "04/05/22",
+    "dispatchNotifiedDate": "",
+    "standbyDate": "",
+    "dispatchedDate": "07/05/22",
+    "acknowledgedDate": "",
+    "enRouteDate": "",
+    "stagingTime": "",
+    "onSceneTime": "",
+    "atPatientTime": "",
+    "transferCareEMSTime": "",
+    "leaveReferringTime": "",
+    "arriveReceivingTime": "",
+    "transferCareDestinationTime": "",
+    "availableTime": "",
+    "callCompletedTime": "",
+    "inQuartersTime": "",
+    "cancelledTime": "",
+    "stagingDate": "",
+    "onSceneDate": "",
+    "atPatientDate": "",
+    "transferCareEMSDate": "",
+    "leaveReferringDate": "",
+    "arriveReceivingDate": "",
+    "transferCareDestinationDate": "",
+    "availableDate": "",
+    "callCompletedDate": "",
+    "inQuartersDate": "",
+    "cancelledDate": ""
+  },
+  "dispatchId": "EMC-NOW-TEST-3162512671",
+  "cadImport": {
+    "isLoading": false,
+    "success": true,
+    "failure": false,
+    "importedCadRecordId": null,
+    "importedCadData": [
+      {
+        "id": "BASE",
+        "displayLabel": "Base",
+        "appStateLocation": "patient.tripInformation.base",
+        "isPickList": true,
+        "value": {
+          "id": 4933,
+          "name": "Station 1"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "DISPATCH_RECORD_ID",
+        "displayLabel": "Dispatch Record ID",
+        "appStateLocation": "dispatchId",
+        "isPickList": false,
+        "value": "EMC-NOW-TEST-3162512671",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "DISP_CENTER",
+        "displayLabel": "Dispatch Center",
+        "appStateLocation": "cadImport.dispCenter",
+        "isPickList": false,
+        "value": 550,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "DT_DISPATCH_DATE",
+        "displayLabel": "Date Dispatched",
+        "appStateLocation": "times.dispatchedDate",
+        "isPickList": false,
+        "value": "07/05/22",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "DT_DISPATCH_TIME",
+        "displayLabel": "Time Dispatched",
+        "appStateLocation": "times.dispatchedTime",
+        "isPickList": false,
+        "value": "17:43",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "DT_RECEIVED_DATE",
+        "displayLabel": "Date Arrive Receiving",
+        "appStateLocation": "times.receivedDate",
+        "isPickList": false,
+        "value": "04/05/22",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "DT_RECEIVED_TIME",
+        "displayLabel": "Time Arrive Receiving",
+        "appStateLocation": "times.receivedTime",
+        "isPickList": false,
+        "value": "11:29",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "ID",
+        "displayLabel": "CAD ID",
+        "appStateLocation": "dispatch.cadRecordId",
+        "isPickList": false,
+        "value": 340607,
+        "performImport": true,
+        "isAllowedToToggleImport": false
+      },
+      {
+        "id": "LPM",
+        "displayLabel": "Loaded Miles",
+        "appStateLocation": "dispatch.loadedMiles",
+        "isPickList": false,
+        "value": 0,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "MEDICAL_CATEGORY",
+        "displayLabel": "Medical Category",
+        "appStateLocation": "patient.tripInformation.patientCategory",
+        "isPickList": true,
+        "value": {
+          "id": 2809,
+          "name": "Abdominal Pain"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_ADDR",
+        "displayLabel": "Patient Address",
+        "appStateLocation": "patient.patientDemographics.address1",
+        "isPickList": false,
+        "value": "1234 Main Street",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_AGE",
+        "displayLabel": "Patient Age",
+        "appStateLocation": "patient.patientDemographics.age",
+        "isPickList": false,
+        "value": "30",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_AGE_TYPE",
+        "displayLabel": "Patient Age Unit",
+        "appStateLocation": "patient.patientDemographics.ageUnit",
+        "isPickList": true,
+        "value": {
+          "id": "m",
+          "name": "Months"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_CITY",
+        "displayLabel": "Patient Adress City",
+        "appStateLocation": "patient.patientDemographics.city",
+        "isPickList": false,
+        "value": "San Diego",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_DOB",
+        "displayLabel": "Patient DOB",
+        "appStateLocation": "patient.patientDemographics.dOB",
+        "isPickList": false,
+        "value": "12/31/1980",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_LNAME",
+        "displayLabel": "Patient Last Name",
+        "appStateLocation": "patient.patientDemographics.lastName",
+        "isPickList": false,
+        "value": "Last",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_SSN",
+        "displayLabel": "Patient SSN",
+        "appStateLocation": "patient.patientDemographics.sSN",
+        "isPickList": false,
+        "value": "123-65-4789",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_STATE",
+        "displayLabel": "Patient State",
+        "appStateLocation": "patient.patientDemographics.state",
+        "isPickList": true,
+        "value": {
+          "id": "CA",
+          "name": "California"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "PT_ZIP",
+        "displayLabel": "Patient Zip Code",
+        "appStateLocation": "patient.patientDemographics.zipCode",
+        "isPickList": false,
+        "value": "92001",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REC_ADDR",
+        "displayLabel": "Destination Address",
+        "appStateLocation": "disposition.destination.address",
+        "isPickList": false,
+        "value": "1000 PARK AVE",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REC_LAT",
+        "displayLabel": "Destination Lattitude",
+        "appStateLocation": "disposition.destination.GPSN",
+        "isPickList": false,
+        "value": 0,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REC_LON",
+        "displayLabel": "Destination Longitude",
+        "appStateLocation": "disposition.destination.GPSE",
+        "isPickList": false,
+        "value": 0,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REC_STATE",
+        "displayLabel": "Destination State",
+        "appStateLocation": "disposition.destination.state",
+        "isPickList": true,
+        "value": {
+          "id": "PA",
+          "name": "Pennsylvania"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REC_TYPE",
+        "displayLabel": "Destination Type",
+        "appStateLocation": "disposition.destination.type",
+        "isPickList": false,
+        "value": 2,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REF_ADDR",
+        "displayLabel": "Pickup Address",
+        "appStateLocation": "patient.pickupAddress.address",
+        "isPickList": false,
+        "value": "11802 RIDGE PKWY 400",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REF_CITY",
+        "displayLabel": "Pickup City",
+        "appStateLocation": "patient.pickupAddress.city",
+        "isPickList": false,
+        "value": "BROOMFIELD",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REF_LAT",
+        "displayLabel": "Pickup Latitude",
+        "appStateLocation": "patient.pickupAddress.referringGPSN",
+        "isPickList": false,
+        "value": 0,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REF_LON",
+        "displayLabel": "Pickup Longitude",
+        "appStateLocation": "patient.pickupAddress.referringGPSE",
+        "isPickList": false,
+        "value": 0,
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REF_STATE",
+        "displayLabel": "Pickup State",
+        "appStateLocation": "patient.pickupAddress.state",
+        "isPickList": true,
+        "value": {
+          "id": "CO",
+          "name": "Colorado"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "REF_ZIP",
+        "displayLabel": "Pickup Zip Code",
+        "appStateLocation": "patient.pickupAddress.zip",
+        "isPickList": false,
+        "value": "80021",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "RESPONSE_CODE",
+        "displayLabel": "Dispatch Priority",
+        "appStateLocation": "patient.tripInformation.dispatchPriority",
+        "isPickList": true,
+        "value": {
+          "id": 4665,
+          "name": "Emergency"
+        },
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      },
+      {
+        "id": "TS_MODIFIED",
+        "displayLabel": "CAD Last Modified",
+        "appStateLocation": "cadImport.lastModified",
+        "isPickList": false,
+        "value": "2022-07-05T17:43:53.896342",
+        "performImport": true,
+        "isAllowedToToggleImport": true
+      }
+    ],
+    "importResponse": {
+      "ok": true,
+      "id": "pcr_53640230",
+      "rev": "4-c2f05ed4c308ff7a4768be4e6a0814f9"
+    },
+    "importSuccess": true
+  },
+  "dispatch": {
+    "cadRecordId": 340607,
+    "loadedMiles": 0
+  },
+  "disposition": {
+    "destination": {
+      "address": "1000 PARK AVE",
+      "GPSN": 0,
+      "GPSE": 0,
+      "state": {
+        "id": "PA",
+        "name": "Pennsylvania"
+      },
+      "type": 2
+    }
+  },
+  "submitChart": {
+    "prid": "3838899",
+    "emcUrl": "https://zoll-alpha.emscharts.com/pr/summary_full.cfm?prid=3838899",
+    "inProgress": false,
+    "success": true,
+    "failure": false
+  }
+}
